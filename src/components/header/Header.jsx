@@ -9,7 +9,7 @@ const Header = (props)=>{
    const [onActive, setOnActive] = useState(true);
    const toggleActive = () => {
      setOnActive((onActive) => !onActive);
-     document.body.style.overflow = !onActive ? "auto" : "hidden";
+     
    };
   return (
     <header className="header">

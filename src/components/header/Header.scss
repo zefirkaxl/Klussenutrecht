@@ -33,13 +33,13 @@ justify-content: space-between;
     justify-content: center;
     position: relative;
     @media (max-width: $mobile) {
-      transform: translateX(400px);
+      transform: translateX(500px);
       position: absolute;
       top: 0;
       right: 0;
       z-index: 4;
       height: 100vh;
-   
+   background: #9f9f9f;
       display: flex;
       transition: all 0.7s;
       &.active {
@@ -50,15 +50,13 @@ justify-content: space-between;
 }
 
 .menu {
-  @media (max-width:$mobile){
-     position: absolute; 
-  }
+ 
 
 		&__list {
       display: flex;
       @include adaptiveValue("gap", 40,20 );
        @media (max-width: $mobile) {
-        position: absolute;
+       
       flex-direction: column;
       gap: toRem(25);
       align-items: center;
@@ -70,7 +68,9 @@ justify-content: space-between;
 		&__item {
       position: relative;
       text-wrap: nowrap;
-
+@media (max-width:$mobile){
+   font-size: 25px; 
+}
       &::before{
         content:'';
         position: absolute;
