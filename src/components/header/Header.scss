@@ -34,12 +34,12 @@ padding: 10px 10px;
     justify-content: center;
     position: relative;
     @media (max-width: $mobile) {
-      transform: translateX(500px);
+      transform: translateX(400px);
       position: absolute;
       top: 0;
       right: 0;
       z-index: 4;
-      height: 100vh;
+      height: 90vh;
    background: #9f9f9f;
       display: flex;
       transition: all 0.7s;
