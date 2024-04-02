@@ -30,7 +30,7 @@ const slide = [
 ];
 const Slider = () => {
   return (
-    <section className="slider">
+    <section id="photo" className="slider">
       <div className="slider__container">
         <Swiper
           spaceBetween={60}

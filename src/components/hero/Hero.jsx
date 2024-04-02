@@ -4,7 +4,7 @@ import "./Hero.scss";
 import hero from "../photos/1.jpg";
 const Hero = (props) => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero__container">
         <div className="hero__body body-hero">
           <h1 className="body-hero__title">

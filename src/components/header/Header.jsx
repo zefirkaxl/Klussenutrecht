@@ -18,13 +18,13 @@ const Header = (props)=>{
         <nav className={onActive ? "header__nav" : "header__nav active"}>
           <ul className="menu__list">
             <li className="menu__item">
-              <a href="#">Thuis</a>
+              <a href="#hero">Thuis</a>
             </li>
             <li className="menu__item">
-              <a href="#">Soorten werk</a>
+              <a href="#option">Soorten werk</a>
             </li>
             <li className="menu__item">
-              <a href="#">klanten</a>
+              <a href="#photo">klanten</a>
             </li>
           </ul>
         </nav>

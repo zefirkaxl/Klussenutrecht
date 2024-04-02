@@ -14,7 +14,7 @@ const items = [
 ];
 const Options = (props)=>{
   return (
-    <section className="options">
+    <section id='option' className="options">
       <div className="options__container">
         <h2 className="options__title">Soorten werk dat wij doen</h2>
         <ul className="options__list">
