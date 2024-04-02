@@ -1,0 +1,19 @@
+@import "../Variable.scss";
+
+
+.video {
+padding-bottom: toRem(60);
+		&__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 30px;
+      flex-wrap: wrap;
+		}
+
+		&__item {
+      width: 300px;
+      
+      
+		}
+}

@@ -1,21 +1,48 @@
 @import "../Variable.scss";
 
 .hero {
-  &__phone {
-    position: fixed;
-    right: 0;
-    bottom: 20px;
-    width: 60px;
-animation: phone 1s infinite alternate;
-    
+  &__container {
+    display: flex;
+    background: rgb(0, 56, 43);
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: toRem(60);
+  }
+
+  &__body {
+    position: absolute;
+    left: 13.5%;
+    top: 50%;
+    @media (max-width: $mobile) {
+      left: 20px;
+    }
+  }
+
+  &__img {
+    @include adaptiveValue("width", 800, 300);
+    margin-bottom: toRem(-30);
+    margin-left: auto;
+    img {
+      width: 100%;
+    }
   }
 }
 
-@keyframes phone {
-  0%{
-   scale: 0.7;
+.body-hero {
+  &__title {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 50, 20);
+    text-wrap: nowrap;
+    color: rgb(77, 204, 122);
+    span {
+      color: white;
+    }
   }
-  100%{
-    scale: 0.9;
+
+  &__suptitle {
+    text-wrap: nowrap;
+    color: rgb(77, 204, 122);
+    @include adaptiveValue("font-size", 30, 16);
   }
 }

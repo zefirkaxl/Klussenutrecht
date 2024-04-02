@@ -1,0 +1,27 @@
+@import "../Variable.scss";
+
+
+.options {
+margin-bottom: toRem(40);
+		&__container {
+		}
+
+		&__title {
+      color: rgb(77,204,122);
+      text-align: center;
+      @include adaptiveValue("font-size",30 ,20 );
+      margin-bottom: toRem(30);
+		}
+
+		&__list {
+    
+columns: 3;
+text-align: center;
+		}
+    &__item{
+      margin-bottom: toRem(20);
+      text-transform: capitalize;
+      @include adaptiveValue("font-size",22 , 16);
+
+    }
+}

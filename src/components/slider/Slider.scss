@@ -1,0 +1,19 @@
+@import '../Variable.scss';
+
+.slider {
+
+padding-bottom: toRem(60);
+		&__container {
+   
+		}
+
+		&__item {
+      align-self: center;
+      @include adaptiveValue("min-width",400 ,300 );
+      max-width: 300px;
+      min-width: 200px;
+      img{
+        width: 100%;
+      }
+		}
+}
