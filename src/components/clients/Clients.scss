@@ -1,32 +1,23 @@
 @import "../Variable.scss";
 
-
-.options {
+.clients {
 margin-bottom: toRem(40);
-
 		&__container {
       background: #d7d7d7;
-
-      padding-top: toRem(30);
+padding-top: toRem(30);
       padding-bottom: toRem(30);
 		}
 
 		&__title {
       color: rgb(77,204,122);
+
       text-align: center;
       @include adaptiveValue("font-size",30 ,20 );
-      margin-bottom: toRem(30);
+      
 		}
 
-		&__list {
-    
-columns: 3;
-text-align: center;
+		&__sup-title {
+      text-align: center;
+      @include adaptiveValue("font-size",22 ,16 );
 		}
-    &__item{
-      margin-bottom: toRem(20);
-      text-transform: capitalize;
-      @include adaptiveValue("font-size",22 , 16);
-
-    }
 }

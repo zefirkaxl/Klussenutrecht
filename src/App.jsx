@@ -1,6 +1,7 @@
 
 
 import './App.scss'
+import Clients from './components/clients/Clients'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Options from './components/options/Options'
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <Hero/>
       <Options/>
+      <Clients/>
       <Video/>
       <Slider/>
     </>
